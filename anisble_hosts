@@ -1,0 +1,18 @@
+[dev]
+dev1 172.31.24.88
+dev2 172.31.21.153
+
+[qa]
+qa1 172.31.30.4
+
+[first]
+dev1
+qa1
+
+[groupofgroups:children]
+dev
+first
+
+[devsubset]
+dev[1:5]
+

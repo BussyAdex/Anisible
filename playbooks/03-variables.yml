@@ -1,0 +1,11 @@
+---
+- hosts: dev
+  vars_files:
+    - variable.yml
+  vars:
+    variable1: "PlayBookValue"
+  tasks:
+    - name: Excute Shell commands
+      shell: uname
+      register: Variable Value
+    - debug: msg="Value is {{ variable1 }}"
